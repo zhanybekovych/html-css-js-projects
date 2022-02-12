@@ -1,0 +1,37 @@
+@import "../vars";
+
+.header {
+  background-color: $secondary;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 160px;
+  }
+
+  &__nav {
+    max-width: 380px;
+    margin-right: 85px;
+  }
+
+  &__logo {
+    width: 200px;
+    margin-right: 90px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 35px;
+    margin-right: 100px;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: $dark;
+    text-decoration: none;
+  }
+}

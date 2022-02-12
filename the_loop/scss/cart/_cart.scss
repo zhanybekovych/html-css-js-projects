@@ -1,0 +1,37 @@
+@import "../vars";
+
+.cart {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__count {
+    position: relative;
+    padding: 0 13px 0 12px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $white;
+    background-color: $accent;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -16px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border: 8px solid transparent;
+      border-right-color: $accent;
+    }
+  }
+}
